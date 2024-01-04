@@ -5,12 +5,12 @@ const GlobalStyles = createGlobalStyle`
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      font-weight: 400;
+    }
+    
+    html,body,#root{
       color: ${(props) => props.theme.white};
       font-family: 'Red Hat Display', sans-serif;
-      font-weight: 400;
-  }
-
-  html,body,#root{
       display: flex;
       flex-direction: column;
       background-color: ${(props) => props.theme.background};

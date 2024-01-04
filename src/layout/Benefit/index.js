@@ -1,23 +1,23 @@
 import React from 'react';
-import { PreparatioGroup, PreparationSt } from './style';
+import { PreparatioGroup, PreparationSt } from '../Preparation/style';
 import Center from '../../components/Center';
-import Preparatio from '../../components/Preparatio';
+import Benefi from '../../components/Benefi';
 
-export default function Preparation() {
+export default function Benefit() {
   return (
     <PreparationSt>
       <Center>
         <h2 className="text_title">
-          Como é feita a
+          Os benefícios de ter nossa
           {' '}
           <b>Landing Page</b>
           ?
         </h2>
 
         <PreparatioGroup>
-          <Preparatio />
-          <Preparatio />
-          <Preparatio />
+          <Benefi />
+          <Benefi />
+          <Benefi />
         </PreparatioGroup>
 
       </Center>
