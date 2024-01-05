@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from 'react-elastic-carousel';
 import { ShopeGroup, ShopeSt } from './style';
 import Shop from '../../components/Shop';
 
@@ -12,7 +13,11 @@ export default function Shope() {
       </h2>
 
       <ShopeGroup>
-        <Shop />
+        <Carousel initialActiveIndex={0}>
+          <Shop />
+          <Shop />
+          <Shop />
+        </Carousel>
       </ShopeGroup>
     </ShopeSt>
   );

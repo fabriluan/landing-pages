@@ -5,7 +5,8 @@ export const ShopSt = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  margin: 0 20px;
   height: 500px;
   padding: 30px 50px;
   background-color: ${(props) => props.theme.background};
