@@ -52,7 +52,7 @@ export default function Footer() {
         </styles.FooterGroup>
 
         <styles.FooterCopy>
-          Todos os direitos reservados para WebTyn &copy; - CNPJ : 00.000.000/0001-00
+          Todos os direitos reservados para WebTyn &copy; - CNPJ : 42.843.827/0001-07
         </styles.FooterCopy>
       </Center>
     </styles.FooterSt>

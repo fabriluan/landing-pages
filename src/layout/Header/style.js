@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderSt = styled.header`
+    width: 100%;
     height: 100px;
+    z-index: 9;
     background-color: ${(props) => props.theme.background};
+    position: fixed;
 
     .center{
         display: flex;

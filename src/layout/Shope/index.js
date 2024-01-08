@@ -5,7 +5,7 @@ import Shop from '../../components/Shop';
 
 export default function Shope() {
   return (
-    <ShopeSt>
+    <ShopeSt id="shope">
       <h2 className="text_title">
         Nossas
         {' '}

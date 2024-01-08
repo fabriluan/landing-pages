@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const HomeSt = styled.section`
-  padding: 20px 0;
-  height: 70vh !important;
+  padding: 60px 0 20px 0;
+  height: 85vh !important;
   min-height: 600px;
 
 
