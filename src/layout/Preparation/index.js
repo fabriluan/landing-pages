@@ -25,9 +25,11 @@ export default function Preparation() {
         </h2>
 
         <PreparatioGroup style={styles}>
-          <Preparatio number="1" title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Preparatio number="1" title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Preparatio number="1" title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
+          <Preparatio number="1" title="Brienfing" text="Iniciamos com um contato direto, onde exploramos o briefing do negócio do cliente. Essa abordagem assegura que cada página atenda às necessidades exclusivas de cada cliente." />
+
+          <Preparatio number="2" title="Design" text="Desenvolvemos o design, focando em estética e funcionalidade. Permitindo que o cliente valide e ajuste o design de acordo com suas preferências antes da implementação final." />
+
+          <Preparatio number="3" title="Construção e lançamento" text="Após a aprovação do design pelo cliente, implementamos a página, garantindo uma transição suave do desenvolvimento para o lançamento online." />
         </PreparatioGroup>
 
       </Center>

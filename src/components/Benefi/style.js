@@ -7,6 +7,7 @@ export const BenefiSt = styled.div`
   padding: 20px 15px 30px 15px;
   max-width: 27%;
   max-width: 400px;
+  min-height: 345px;
 
   img{
     width: 100%;
@@ -24,5 +25,11 @@ export const BenefiSt = styled.div`
   p{
     margin-top: 10px;
     font-size: 18px;
+  }
+
+  @media screen and (max-width: 770px){
+    margin-bottom: 30px;
+    min-height: 100px;
+    padding: 10px 10px 35px 10px;
   }
 `;

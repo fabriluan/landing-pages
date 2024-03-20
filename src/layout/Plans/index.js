@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { PlanGroup, PlansSt } from './style';
 import Plan from '../../components/Plan';
 import Center from '../../components/Center';
+import { basic, custom, premium } from '../../data/plans';
 
 export default function Plans() {
   const ref = useRef(null);
@@ -24,9 +25,9 @@ export default function Plans() {
         </h2>
 
         <PlanGroup style={styles}>
-          <Plan name="Basic" prince="R$ 299,99" princeX="27,99" />
-          <Plan name="Basic" prince="R$ 329,99" princeX="27,99" premium />
-          <Plan name="Custom" prince="R$ 599,99" princeX="27,99" custom />
+          <Plan name="Basic" prince="R$ 329,99" princeX="27,99" obj={basic} link="https://wa.me/5542999235625?text=Quero%20o%20plano%20BASIC!" />
+          <Plan name="Premium" prince="R$ 349,99" princeX="27,99" obj={premium} link="https://wa.me/5542999235625?text=Quero%20o%20plano%20PREMIUM!" premium />
+          <Plan name="Custom" prince="R$ 499,99" princeX="27,99" obj={custom} link="https://wa.me/5542999235625?text=Quero%20o%20plano%20CUSTOM!" custom />
         </PlanGroup>
       </Center>
     </PlansSt>

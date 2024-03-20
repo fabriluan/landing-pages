@@ -10,6 +10,10 @@ export const FooterGroup = styled.section`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media screen and (max-width: 770px){
+    flex-direction: column;
+  } 
 `;
 
 export const FooterAbout = styled.div`
@@ -26,6 +30,7 @@ export const FooterAbout = styled.div`
   p{
     margin-top: 10px;
   }
+
 `;
 
 export const FooterNav = styled.nav`
@@ -53,6 +58,10 @@ export const FooterNav = styled.nav`
       }
     }
   }
+
+  @media screen and (max-width: 770px){
+    margin-top: 20px;
+  } 
 `;
 
 export const FooterCall = styled.div`
@@ -76,6 +85,10 @@ export const FooterCall = styled.div`
       margin-right: 10px;
     }
   }
+
+  @media screen and (max-width: 770px){
+    margin-top: 20px;
+  } 
 `;
 
 export const FooterCopy = styled.section`
@@ -84,4 +97,5 @@ export const FooterCopy = styled.section`
   justify-content: center;
   align-items: center;
   padding: 30px 0 0 0;
+  text-align: center;
 `;

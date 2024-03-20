@@ -8,12 +8,12 @@ import logo from '../../assets/whiteText.png';
 
 export default function Footer() {
   const links = [
-    { href: '#home', name: 'Inicio' },
-    { href: '#preparation', name: 'Preparo' },
-    { href: '#benefit', name: 'Benefícios' },
-    { href: '#shope', name: 'Lojas' },
-    { href: '#plan', name: 'Planos' },
-    { href: '#faqs', name: 'FAQS' },
+    { href: 'home', name: 'Inicio' },
+    { href: 'preparation', name: 'Preparo' },
+    { href: 'benefit', name: 'Benefícios' },
+    // { href: 'shope', name: 'Lojas' },
+    { href: 'plan', name: 'Planos' },
+    { href: 'faqs', name: 'FAQS' },
   ];
 
   return (
@@ -31,7 +31,14 @@ export default function Footer() {
 
             <ul>
               {links.map((element) => (
-                <li><Link to={element.href} offset="90px">{element.name}</Link></li>
+                <Link
+                  to={element.href}
+                  smooth
+                  offset={-90}
+                  duration={700}
+                >
+                  {element.name}
+                </Link>
               ))}
             </ul>
           </styles.FooterNav>
@@ -41,7 +48,7 @@ export default function Footer() {
 
             <p>
               <BsTelephoneFill />
-              (00) 00000-0000
+              55 (42) 9923-5625
             </p>
             <p>
               <MdEmail />

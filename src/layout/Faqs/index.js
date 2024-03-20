@@ -24,10 +24,13 @@ export default function Faqs() {
         </h2>
 
         <styles.FaqsGroup style={stylesA}>
-          <Faq title="A dúvida do usuário?" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Faq title="A dúvida do usuário?" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Faq title="A dúvida do usuário?" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Faq title="A dúvida do usuário?" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
+          <Faq title="Quanto tempo leva para construir meu site?" text="O site depende muito da complexibilidade. Normalmente, leva entre 3 a 7 dias para concluir um projeto." />
+
+          <Faq title="Preciso ter domínio e hospedagem?" text="Sim, nosso equipe te auxiliara para compra de dominio e hospedagem " />
+
+          <Faq title="Qual é a política de reembolso?" text="Nossa política de reembolso é muito simples: se você solicitar um reembolso antes do projeto ser iniciado, teremos o maior prazer em reembolsá-lo. Depois que o projeto é criado, não há reembolso. Todos os projetos criados e entregues aos clientes não são reembolsáveis porque não há como recuperar nossos custos depois de criar o projeto." />
+
+          <Faq title="Qual é a estrutura de criação do site?" text="É feita preferêncialmente pelo WordPress que é a ferramenta de criação de sites mais utilizadas do mundo, porém trabalhamos com sites via ReactJs também" />
 
         </styles.FaqsGroup>
       </Center>

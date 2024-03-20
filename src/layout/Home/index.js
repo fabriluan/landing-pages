@@ -29,7 +29,7 @@ export default function Home() {
 
           <p>Crie agora sua landing page de alta performace e 100% profissional, uma landing page vai alanvançar o seu negócio em até 200%</p>
 
-          <Link to="#1">Crie sua Landing Page agora!</Link>
+          <Link to="plan" smooth offset={-90} duration={700}>Crie sua Landing Page agora!</Link>
         </style.HomeText>
 
         <img src={banner} alt="foto banner" style={styles} />

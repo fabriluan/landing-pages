@@ -31,8 +31,16 @@ const GlobalStyles = createGlobalStyle`
 
     b{
       font-family: 'Rubik', sans-serif !important;
-      font-size: 35px !important;
+      font-size: 35px;
       font-weight: 800 !important;
+    }
+
+    @media screen and (max-width: 770px){
+      font-size: 28px;
+
+      b{
+        font-size: 30px;
+      }
     }
   }
 

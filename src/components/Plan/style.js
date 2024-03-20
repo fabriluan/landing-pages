@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const PlanSt = styled.div`
+
+@media screen and (max-width: 770px){
+    margin-top: 20px;
+  } 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +20,8 @@ export const PlanSt = styled.div`
   ${(props) => (props.$isCustom ? `  color: ${props.theme.dark};
   background-color: ${props.theme.white};
   border: 1px solid ${props.theme.layoutPink};` : '')}
+
+  
   
 `;
 

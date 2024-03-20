@@ -7,6 +7,7 @@ export const PreparatioSt = styled.div`
   padding: 5px 15px 30px 15px;
   max-width: 27%;
   max-width: 400px;
+  min-height: 330px;
 
   h3{
     font-family: 'Rubik', sans-serif !important;
@@ -24,5 +25,15 @@ export const PreparatioSt = styled.div`
   p{
     margin-top: 10px;
     font-size: 18px;
+  }
+
+  @media screen and (max-width: 770px){
+    margin-bottom: 30px;
+    min-height: 100px;
+    padding: 5px 10px 35px 10px;
+
+    h3{
+      font-size: 100px;
+    }
   }
 `;

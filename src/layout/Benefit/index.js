@@ -26,9 +26,9 @@ export default function Benefit() {
         </h2>
 
         <PreparatioGroup style={styles}>
-          <Benefi img={img1} title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Benefi img={img1} title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
-          <Benefi img={img1} title="Brienfing" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in risus eu libero vulputate gravida." />
+          <Benefi img={img1} title="Adaptação ao Público-Alvo" text="adaptadas ao público-alvo personalizam mensagens, imagens e elementos de design para atrair efetivamente diferentes segmentos, garantindo uma conexão mais relevante e impactante." />
+          <Benefi img={img1} title="Conversão" text="Impulsionam a conversão ao fornecer mensagens claras, chamadas de ação diretas e uma experiência focada, aumentando a probabilidade de os visitantes realizar a ação desejada." />
+          <Benefi img={img1} title="Campanhas de Marketing" text="São peças fundamentais em campanhas de marketing, oferecendo foco específico e mensagens personalizadas para maximizar a conversão." />
         </PreparatioGroup>
 
       </Center>

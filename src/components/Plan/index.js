@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 import * as styles from './style';
 
 export default function Plan({
-  name, prince, princeX, premium, custom,
+  name, prince, princeX, premium, custom, obj, link,
 }) {
   return (
     <styles.PlanSt $isPremium={premium} $isCustom={custom}>
@@ -21,64 +21,16 @@ export default function Plan({
         <p>Quais meu benefícios?</p>
       </styles.PlanText>
       <styles.PlanBenefit $isCustom={custom} $isPremium={premium}>
+        {
+          obj.map((element) => (
+            <div>
+              {element[0] ? <FaCheckSquare color="#CB13A4" /> : <FaWindowClose color="#2E2E2E" />}
+              <span>{element[1]}</span>
+            </div>
+          ))
+        }
 
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaWindowClose color="#2E2E2E" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaWindowClose color="#2E2E2E" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaWindowClose color="#2E2E2E" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaCheckSquare color="#CB13A4" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <div>
-          <FaWindowClose color="#2E2E2E" />
-          <span>Garantia de 10 dias</span>
-        </div>
-
-        <a href="#1">Quero este plano</a>
+        <a href={link} target="_blank" rel="noreferrer">Quero este plano</a>
 
       </styles.PlanBenefit>
     </styles.PlanSt>
@@ -89,6 +41,8 @@ Plan.propTypes = {
   name: PropTypes.string.isRequired,
   prince: PropTypes.string.isRequired,
   princeX: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
   premium: PropTypes.bool.isRequired,
   custom: PropTypes.bool.isRequired,
+  obj: PropTypes.node.isRequired,
 };

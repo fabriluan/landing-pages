@@ -16,6 +16,16 @@ export const HomeSt = styled.section`
     width: 100%;
     max-width: 600px;
   }
+
+  @media screen and (max-width: 770px){
+    padding: 130px 20px 20px 20px;
+    height: 100vh !important;
+
+    .center{
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+  }
 `;
 
 export const HomeText = styled.div`
@@ -85,6 +95,20 @@ export const HomeText = styled.div`
         width: 100%;
         left: 0%;
       }
+    }
+  }
+
+  @media screen and (max-width: 770px){
+    h2{
+      font-size: 28px;
+
+      b{
+        font-size: 30px;
+      }
+    }
+
+    p, a{
+      font-size: 18px;
     }
   }
 `;
